@@ -21,9 +21,10 @@ $body_texture_url:'../img/lightpaperfibers.png';
 //                                              COLORS 
 //////////////////////////////////////////////////////
 
-$body_color:#F4F4F6;
+$body_color:#F4F4F6;//244, 244, 246
 $main_theme_color_6tint:#CCCCCA;
-$main_theme_color: #35332b;
+$main_theme_color: #093567;//#35332b;
+//$2nd_theme_clor:
 $main_tx_color: #35332b;
 $main_shadow_clr:#B8B4A7;
 
@@ -52,7 +53,8 @@ $active:#d23a42;
 $nav_link_clr:#141310;
 
 //footer
-$sign-tx-clr:#81807A;
+$sign-tx-clr:#E0E6EC;//#81807A;
+$footer-bg-clr:#093567; //rgba(9, 53, 103)
 
 
 /////////////////////////////////////////////////////////
@@ -105,7 +107,7 @@ $header_height:450px;
 
 //footer
 $foot-top-margin: 20px;
-
+$foot_height: 50px;
 $sign-padding: 10px 50px 0 20px;
 
 ////////////////////////////////////////////////////////
@@ -113,7 +115,7 @@ $sign-padding: 10px 50px 0 20px;
 //////////////////////////////////////////////////////////
 
 //header
-$header_back_logo_url:'../img/notepad-logo.jpg';
+$header_back_logo_url:'../img/typewriter-logo.jpg';
 $header_backgr_txr:'../img/linedpaper.png';
 //typewriter-logo
 //sidebar

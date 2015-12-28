@@ -99,6 +99,9 @@ body,
     .main_container {
       width: 1600px; } }
 
+section {
+  margin-left: 200px; }
+
 .header-main-layt {
   margin: 0 auto 0 200px;
   max-width: 100%;
@@ -114,7 +117,7 @@ body,
   margin: 220px 30px 0 30px; }
 
 .content {
-  margin: 0 auto 0 200px;
+  margin: 0 auto;
   padding: 40px 60px 60px 60px; }
 
 footer {
@@ -124,11 +127,13 @@ footer {
 .push-right {
   float: right; }
 
+.wrap {
+  min-height: calc(100vh - 50px); }
+
 .back_title {
-  background: radial-gradient(rgba(244, 244, 244, 0.1), rgba(244, 244, 244, 0.8)), url("../img/notepad-logo.jpg") no-repeat center center no-scroll;
+  background: linear-gradient(rgba(9, 53, 103, 0.9), rgba(244, 244, 246, 0.3)), url("../img/typewriter-logo.jpg") no-repeat center center no-scroll;
   background-size: cover;
-  background-color: #F4F4F6;
-  background-blend-mode: luminosity;
+  background-blend-mode: screen;
   border-bottom: solid 1px #CCCCCA;
   box-shadow: 0 12px 12px -10px #B8B4A7; }
 
@@ -173,7 +178,7 @@ footer {
   letter-spacing: -26px;
   font-weight: 700; }
 
-.small_box_shdw {
+.logo__shdw {
   box-shadow: 0 10px 8px -10px #B8B4A7; }
 
 .link_is_block_uper {
@@ -191,7 +196,7 @@ footer {
     padding-bottom: 5px;
     color: #141310; }
     .nav_list--tx a:hover {
-      border-bottom: solid 1px #141310; }
+      border-bottom: solid 1px #093567; }
 
 .li_padded li {
   padding: 10px 0; }
@@ -199,17 +204,26 @@ footer {
 .small-shadow {
   text-shadow: 0 1px 1px #96948B; }
 
+.line {
+  width: 70%;
+  margin: 50px auto 10px;
+  border: solid 1px #093567; }
+
 .content {
   line-height: 1.5em;
   letter-spacing: 0.4px;
   word-spacing: 1.5px; }
 
+.footer {
+  background-color: #093567;
+  background: linear-gradient(rgba(9, 53, 103, 0.85), #093567); }
+
 .have-top-border {
-  border-top: solid 1px #CCCCCA; }
+  border-top: solid 2px #CCCCCA; }
 
 .sign-placment {
   padding: 10px 50px 0 20px; }
 
 .sign--tx {
   font-size: 0.8em;
-  color: #81807A; }
+  color: #E0E6EC; }

@@ -19,7 +19,7 @@
 // https://css-tricks.com/basics-css-blend-modes/
 
 @mixin background_blend($color,$mode) {
-background-color: $color;
+//background-color: $color;
 background-blend-mode: $mode;
 }
 

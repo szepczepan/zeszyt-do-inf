@@ -1,4 +1,6 @@
-
+section {
+	margin-left: $sidebar_width;
+}
 
 .header-main-layt {
 	@include set_size_content($sidebar_width);
@@ -19,15 +21,19 @@
 
 .content {
 	
-	margin: 0 auto 0 $sidebar_width;
+	margin: 0 auto;
 	padding:40px 60px 60px 60px;
 }
 
 footer {
 	width: 100%;
-	height: 50px;
+	height: $foot_height;
 }
 
 .push-right {
 	float: right;
+}
+
+.wrap {
+	min-height: calc(100vh - #{$foot_height} ); // zmienna w funkcji calc() musi być zawarta w #{}
 }

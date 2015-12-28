@@ -4,11 +4,11 @@
 //////////////////////////////
 .back_title{
 	
-	background: radial-gradient(rgba(244, 244, 244, 0.1),rgba(244, 244, 244, 0.8)),
+	background: linear-gradient(rgba(9, 53, 103, 0.9),rgba(244, 244, 246, 0.3)),
 	url($header_back_logo_url) no-repeat center center no-scroll; 
     background-size: cover;
     //@include background_cover($header_back_logo_url);
-	@include background_blend($body_color,luminosity);//#ECEAE2
+	@include background_blend($body_color,screen);//#ECEAE2
 	//@include background_texture($header_backgr_txr);
 	border-bottom: solid 1px $main_theme_color_6tint;
 	box-shadow: 0 12px 12px -10px $main_shadow_clr;
@@ -68,7 +68,7 @@
 	letter-spacing: -26px;
 	font-weight: 700;
 }
-.small_box_shdw {
+.logo__shdw {
 	box-shadow: 0 10px 8px -10px $main_shadow_clr;
 }
 
@@ -92,7 +92,7 @@
 		padding-bottom:5px;
 		color:$nav_link_clr;
 		&:hover {
-			border-bottom: solid 1px $nav_link_clr;
+			border-bottom: solid 1px $main_theme_color;//$nav_link_clr;
 
 		}
 	}
@@ -103,6 +103,13 @@
 } 
 .small-shadow {
 	text-shadow: 0 1px 1px #96948B;
+}
+
+//LINE
+.line {
+	width:70%;
+	margin: 50px auto 10px;
+	border: solid 1px $main_theme_color;
 }
 
 
@@ -118,10 +125,15 @@
 //////////////////////////////
 //FOOTER
 //////////////////////////////
+.footer{
+	background-color:$footer-bg-clr;
+	background: linear-gradient(rgba(9, 53, 103, 0.85),rgba(9, 53, 103, 1))
+}
 
 .have-top-border {
-	border-top: solid 1px $main_theme_color_6tint;
+	border-top: solid 2px $main_theme_color_6tint;
 }
+
 .sign-placment {
 	padding: $sign-padding;
 }
