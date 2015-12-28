@@ -1,0 +1,126 @@
+
+//////////////////////////////////////////////////////////////
+//FONT MIXINS
+/////////////////////////////////////////////////////////////
+
+@mixin set_center_uppr (){
+
+  text-align:center;
+  text-transform:uppercase;
+}
+
+
+///////////////////////////////////////////////////////////////
+//BACKGROUND MIXINS
+///////////////////////////////////////////////////////////////
+
+// mieszanie coloru z resztą elementów background (np.obrazkiem)
+// jako mode może być użyte:screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, and luminosity. And also normal
+// https://css-tricks.com/basics-css-blend-modes/
+
+@mixin background_blend($color,$mode) {
+background-color: $color;
+background-blend-mode: $mode;
+}
+
+@mixin background_texture($url,$repeat:repeat) {
+background: url($url);
+background-repeat:$repeat;
+}
+//aby tło było nie pływające jako po podać no-scroll
+//https://css-tricks.com/perfect-full-page-background-image/
+
+@mixin background_cover($url,$pos:no-scroll,$repeat:no-repeat) {
+	background:url($url) $repeat center center $pos; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+/////////////////////////////////////////////////////////////
+//MARGIN MIXINS
+/////////////////////////////////////////////////////////////
+
+  //ustawienie marinesów i paddingów na 0
+@mixin set_zero_mrgs_pddg(){
+  padding:0;
+  margin: 0;
+}
+
+// ustawienie marginesów tak aby mieściły się obok sidebara
+@mixin set_size_content($sidebar_content_border){
+  margin: 0 auto 0 $sidebar_content_border;
+}
+
+
+///////////////////////////////////////////////////////////////
+//MQ MIXINS
+////////////////////////////////////////////////////////////////
+
+  //media queries for container with auto center
+
+@mixin container_sett($margin:25px){
+   
+
+  @media all and (min-width: $xs-screen){
+    width: 700px;
+  }
+  @media all and (min-width: $sm-screen){
+    width: 750px;
+  }
+  @media all and (min-width: $md-screen){
+    width: 1200px;
+  }
+  @media all and (min-width: $lg-screen){
+    width: 1600px;
+  }
+
+
+  padding-left:$margin;
+  padding-right:$margin;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+}
+
+@mixin panel($bg-color:#eeecea){
+  background-color:$panel-color;
+  padding:10px 45px;
+  border-radius: 5px;
+}
+
+@mixin inline_kod_set(){
+  background-color:$kod-bg-color;
+  display: inline-block;
+  padding:5px;
+  margin:5px;
+  border:1px solid $kod-brdr-color;
+}
+
+
+@mixin font_queries {
+  font-size:100%;
+
+}
+
+
+/////////////////////////////////////////////////////
+//LNKS MIXIN
+//////////////////////////////////////////////////////
+@mixin linx () {
+  a {
+    text-decoration: none;    
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}

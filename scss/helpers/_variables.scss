@@ -1,0 +1,121 @@
+// zmienne 
+
+
+
+//////////////////////////////////////////////////////
+//                                    SCREEN BREAKPOINT
+//////////////////////////////////////////////////////
+$xs-screen:768px;
+$sm-screen:800px;
+$md-screen:1280px;
+$lg-screen:1680px;
+
+//////////////////////////////////////////////////////
+//                                                BASE
+//////////////////////////////////////////////////////
+
+
+$body_texture_url:'../img/lightpaperfibers.png';
+
+//////////////////////////////////////////////////////
+//                                              COLORS 
+//////////////////////////////////////////////////////
+
+$body_color:#F4F4F6;
+$main_theme_color_6tint:#CCCCCA;
+$main_theme_color: #35332b;
+$main_tx_color: #35332b;
+$main_shadow_clr:#B8B4A7;
+
+//sidebar
+$sidebar_bg_color:$body_color;
+$sidebar_li_hover_clr:#ebebeb;
+$logo--tx_clr: white;
+
+//header
+
+$header_main_tx_color:$main_tx_color;
+$header-color:#eaecee;
+
+//content
+// $panel-color:#eeecea;
+// $kod-bg-color:#f3f4f4 ;
+// $kod-brdr-color:#d0d3d4;
+
+//link colors
+$link: #3a8ed2;
+$visit:#2b6b9e;
+$hover:#4cc4e1;
+$active:#d23a42;
+
+//navigation link colors
+$nav_link_clr:#141310;
+
+//footer
+$sign-tx-clr:#81807A;
+
+
+/////////////////////////////////////////////////////////
+//                                                FONTS
+//////////////////////////////////////////////////////////
+
+$main-serif-font: 'Bree Serif', serif;
+$h1_size:4em;
+$p_size:1em;
+
+///header
+$header_main_tx_wrd_spc: 15px;
+$main_title_big_font_s: 120px;
+//sidebar
+$nav_links_font_s:1.3em;
+$logo_font_size: 90px;
+
+//content
+$basic_content_ln_high:1.5em;
+$basic_content_lt_spc:0.4px;
+$basic_content_wrd_spc:1.5px;
+
+//footer
+$sign-tx-size: 0.8em;
+
+
+////////////////////////////////////////////////////////
+//                                                  LAYOUT
+//////////////////////////////////////////////////////////
+
+
+//content
+
+
+//sidebar
+$sidebar_width:200px;  
+$sidebar_links_line_h:1.5em;
+$logo_width: 90px;
+$logo_height: $logo_width;
+
+$sidebar_li_padding:10px 0;
+//$sidebar_link_margins:20px 20px;
+
+
+//header
+$header_width:100%;
+$header_height:450px;
+
+
+
+//footer
+$foot-top-margin: 20px;
+
+$sign-padding: 10px 50px 0 20px;
+
+////////////////////////////////////////////////////////
+//                                                HOME
+//////////////////////////////////////////////////////////
+
+//header
+$header_back_logo_url:'../img/notepad-logo.jpg';
+$header_backgr_txr:'../img/linedpaper.png';
+//typewriter-logo
+//sidebar
+$sidebar_brdr_r:5px;
+$sidebar_backgr_txr:'../img/linedpaper.png';

@@ -1,0 +1,21 @@
+* {
+	box-sizing:border-box;
+}
+
+body {
+
+	//@include background_texture($body_texture_url);
+	//@include background_blend($body_color,screen)
+	//@include background_cover($header_back_logo_url);
+	background-color: $body_color;
+
+	color:$main_tx_color;
+	font-size: 100%;
+
+}
+
+@include linx();
+
+h1{
+	font-size:3em;
+}

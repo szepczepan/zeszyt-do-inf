@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #F4F4F6;
+  color: #35332b;
+  font-size: 100%; }
+
+a {
+  text-decoration: none;
+  color: #3a8ed2; }
+  a:visited {
+    color: #2b6b9e; }
+  a:hover {
+    color: #4cc4e1; }
+  a:active {
+    color: #d23a42; }
+
+h1 {
+  font-size: 3em; }
+
+body,
+.open-sans {
+  font-family: 'Open Sans', sans-serif; }
+
+.main-serif-font {
+  font-family: "Bree Serif", serif; }
+
+.tangerine-font {
+  font-family: 'Tangerine', serif,cursive; }
+
+.lora-font {
+  font-family: 'Lora', serif; }
+
+.main_container {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
+  margin-top: 0px; }
+  @media all and (min-width: 768px) {
+    .main_container {
+      width: 700px; } }
+  @media all and (min-width: 800px) {
+    .main_container {
+      width: 750px; } }
+  @media all and (min-width: 1280px) {
+    .main_container {
+      width: 1200px; } }
+  @media all and (min-width: 1680px) {
+    .main_container {
+      width: 1600px; } }
+
+.header-main-layt {
+  margin: 0 auto 0 200px;
+  max-width: 100%;
+  height: 450px; }
+
+.sidebar {
+  width: 200px;
+  position: fixed;
+  min-height: 100%; }
+
+.nav_ul_pos {
+  position: relative;
+  margin: 220px 30px 0 30px; }
+
+.content {
+  margin: 0 auto 0 200px;
+  padding: 40px 60px 60px 60px; }
+
+footer {
+  width: 100%;
+  height: 50px; }
+
+.push-right {
+  float: right; }
+
+.back_title {
+  background: radial-gradient(rgba(244, 244, 244, 0.1), rgba(244, 244, 244, 0.8)), url("../img/notepad-logo.jpg") no-repeat center center no-scroll;
+  background-size: cover;
+  background-color: #F4F4F6;
+  background-blend-mode: luminosity;
+  border-bottom: solid 1px #CCCCCA;
+  box-shadow: 0 12px 12px -10px #B8B4A7; }
+
+.main-title {
+  position: relative;
+  padding: 210px 0 0 0;
+  text-align: center; }
+
+.main-title--big {
+  color: #35332b;
+  display: block-inline;
+  font-size: 120px;
+  font-weight: 700;
+  word-spacing: 15px; }
+
+.main-title--small {
+  display: block-inline;
+  padding: 40px 0;
+  font-size: 44px; }
+
+.main__shadow {
+  text-shadow: 1px 2px 4px #B8B4A7; }
+
+.sidebar {
+  background-color: #F4F4F6; }
+
+.logo {
+  margin: 50px auto 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #35332b; }
+
+.logo--tx {
+  margin: 0 auto 0;
+  width: 90px;
+  height: 90px;
+  font-size: 90px;
+  background-color: #35332b;
+  border-radius: 50%;
+  color: white;
+  letter-spacing: -26px;
+  font-weight: 700; }
+
+.small_box_shdw {
+  box-shadow: 0 10px 8px -10px #B8B4A7; }
+
+.link_is_block_uper {
+  text-transform: uppercase; }
+  .link_is_block_uper a {
+    text-decoration: none;
+    display: block; }
+
+.nav_list--tx {
+  font-size: 1.3em;
+  letter-spacing: 2.3px;
+  text-align: right; }
+  .nav_list--tx a {
+    border-bottom: dashed 1px transparent;
+    padding-bottom: 5px;
+    color: #141310; }
+    .nav_list--tx a:hover {
+      border-bottom: solid 1px #141310; }
+
+.li_padded li {
+  padding: 10px 0; }
+
+.small-shadow {
+  text-shadow: 0 1px 1px #96948B; }
+
+.content {
+  line-height: 1.5em;
+  letter-spacing: 0.4px;
+  word-spacing: 1.5px; }
+
+.have-top-border {
+  border-top: solid 1px #CCCCCA; }
+
+.sign-placment {
+  padding: 10px 50px 0 20px; }
+
+.sign--tx {
+  font-size: 0.8em;
+  color: #81807A; }
